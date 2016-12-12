@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Layout: App
+   ========================================================================== */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
+}
+
+.content {
+  background: $content-bg;
+  padding: .5rem;
+  flex: 1;
+
+  @include breakpoint(medium) {
+    padding: 1rem 1.5rem;
+  }
+}
+
+
+/* ==========================================================================
+   Layout: Content
+   ========================================================================== */
+.content-inner {
+  // Stack elements and create gutters
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include breakpoint(large) {
+    flex-direction: row;
+  }
+}
+
+.content__title {
+  margin: 0 0 .5rem;
+  font-weight: normal;
+  font-size: 20px;
+
+  @include breakpoint(medium) {
+    &__title {
+      font-size: 24px;
+    }
+  }
+}
+
+
+/* ==========================================================================
+   Layout: Card
+   ========================================================================== */
+.card {
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  padding: .5rem;
+  margin: 0 0 1rem;
+
+  &__title {
+    margin: 0 0 .5rem;
+    font-weight: normal;
+    font-size: 18px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 300;
+    font-size: 13px;
+  }
+
+  @include breakpoint(medium) {
+    padding: 1rem 1.5rem;
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+    }
+  }
+
+  @include breakpoint(large) {
+    //max-width: 960px;
+    &--small {
+      width: 33%;
+    }
+
+    &--medium {
+      width: 65%;
+    }
+
+    &--large {
+      width: 100%;
+    }
+  }
+}

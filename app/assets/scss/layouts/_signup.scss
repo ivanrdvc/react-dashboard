@@ -1,0 +1,113 @@
+.signup {
+  background: $sidebar-bg;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2rem 0 0;
+
+  &__form {
+    background: #fff;
+    width: 100%;
+    border-radius: 2px;
+    padding: 2rem 1rem;
+  }
+
+  &__footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  &__legend {
+    text-align: center;
+    font-weight: 300;
+    margin: 0 auto 30px;
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  &__input {
+    background: #fcfcfc;
+    border: 2px solid #e7e7e7;
+    margin: 20px auto;
+    padding: 15px;
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: opacity 0.4s;
+    height: auto;
+  }
+
+  &__message {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    color: #999;
+  }
+
+  &__button {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    width: 100%;
+    color: white;
+    background: #15CD72;
+    border: 0;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    height: auto;
+    -webkit-appearance: none;
+    @include transition-bg;
+
+    &:hover {
+      background: darken(#15CD72, 10%);
+    }
+  }
+
+  @include breakpoint(small) {
+    padding: 3rem 1rem;
+
+    &__form {
+      margin: 0 auto;
+      width: 27rem;
+      padding: 2rem;
+    }
+
+    &__footer {
+      margin: 0 auto;
+      width: 27rem;
+    }
+  }
+}
+
+.button {
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 13px;
+  padding: .5rem .7rem;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background .2s ease;
+
+  &--messages {
+    background: $primary-color;
+    color: #fff;
+
+    &:hover {
+      background: darken($primary-color, 5%);
+    }
+  }
+
+  @include breakpoint(medium) {
+    font-size: 14px;
+    padding: .5rem 1rem;
+  }
+}

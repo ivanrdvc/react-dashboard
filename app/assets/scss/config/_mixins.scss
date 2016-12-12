@@ -1,0 +1,29 @@
+// Media query
+@mixin breakpoint($point) {
+  @if $point==small {
+    @media (min-width: $bp-small) {
+      @content ;
+    }
+  }
+  @else if $point==medium {
+    @media (min-width: $bp-medium) {
+      @content ;
+    }
+  }
+  @else if $point==smallToMedium {
+    @media (max-width: $bp-large-x) and (min-width: $bp-medium) {
+      @content ;
+    }
+  }
+  @else if $point==large {
+    @media (min-width: $bp-large) {
+      @content ;
+    }
+  }
+}
+
+// Transition Background
+@mixin transition-bg {
+  transition: background .2s ease;
+}
+

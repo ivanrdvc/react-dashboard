@@ -1,0 +1,17 @@
+// Typography
+// Clearings and Box sizing
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+//.clearfix::after {
+//  content: "";
+//  display: table;
+//  clear: both;
+//}
+
+body {
+  font-family: $primary-font, sans-serif;
+}
