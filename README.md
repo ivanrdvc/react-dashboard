@@ -1,8 +1,6 @@
 # Admin Panel
 
-![Image of the project]()
-
-Work in progress. The goal of this project is to create a front-end dashboard in React. Designed inspired by [UInugget](https://www.behance.net/gallery/44056351/UInuggetcom-Free-Dashboard-Design)
+Work in progress. The goal of this project is to create a front-end dashboard in React. Designed inspired by [UInugget](https://www.behance.net/gallery/44056351/UInuggetcom-Free-Dashboard-Design).
 
 Sass + BEM. This project also uses both webpack and gulp. Gulp is used purely for Sass compiling.
 
