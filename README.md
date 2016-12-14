@@ -1,4 +1,4 @@
-# Admin Panel
+# React Admin Dashboard
 
 Work in progress. The goal of this project is to create a front-end dashboard in React. Designed inspired by [UInugget](https://www.behance.net/gallery/44056351/UInuggetcom-Free-Dashboard-Design).
 
