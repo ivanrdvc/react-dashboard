@@ -9,33 +9,7 @@ class App extends React.Component {
       menuToggle: '',
       messagesOpen: false,
       loginOpen: false,
-      themeGreen: false,
-      messagesData: [
-        {
-          title: 'Project Title',
-          subtitle: 'Design & Development',
-          topic: 'Last Sale Tody',
-          comments: 13
-        },
-        {
-          title: 'Project Title 2',
-          subtitle: 'Design & Development',
-          topic: 'Last Sale Tody',
-          comments: 13
-        },
-        {
-          title: 'Project Title 3',
-          subtitle: 'Design & Development',
-          topic: 'Last Sale Tody',
-          comments: 13
-        },
-        {
-          title: 'Project Title 4',
-          subtitle: 'Design & Development',
-          topic: 'Last Sale Tody',
-          comments: 13
-        }
-      ]
+      themeGreen: false
     };
 
     this.handleMenu = this.handleMenu.bind(this);
