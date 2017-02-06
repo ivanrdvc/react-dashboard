@@ -1,6 +1,6 @@
 # React Admin Dashboard
 
-![Image of the project]()
+![Image of the project](https://cloud.githubusercontent.com/assets/13908256/22648153/8cfb772e-ec75-11e6-8703-f8e2fa40d1dc.jpg)
 
 The goal of this project is to create a front-end dashboard in React. Designed inspired by [UInugget](https://www.behance.net/gallery/44056351/UInuggetcom-Free-Dashboard-Design)
 
