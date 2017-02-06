@@ -9,7 +9,7 @@ class App extends React.Component {
       menuToggle: '',
       messagesOpen: false,
       loginOpen: false,
-      themeGreen: false
+      themeGreen: false,
     };
 
     this.handleMenu = this.handleMenu.bind(this);
@@ -17,11 +17,10 @@ class App extends React.Component {
     this.handleMessagesDropdown = this.handleMessagesDropdown.bind(this);
     this.handleLoginDropdown = this.handleLoginDropdown.bind(this);
     this.handleDropdownOverlay = this.handleDropdownOverlay.bind(this);
-    this.handleThemeGreen = this.handleThemeGreen.bind(this)
   }
 
   handleMenu() {
-    var menuToggleStatus = (this.state.menuToggle === '') ? 'sidebar--active' : '';
+    let menuToggleStatus = (this.state.menuToggle === '') ? 'sidebar--active' : '';
     this.setState({menuToggle: menuToggleStatus});
   }
 
@@ -49,10 +48,6 @@ class App extends React.Component {
     this.setState({messagesOpen: false});
   }
 
-  handleThemeGreen() {
-    this.setState({themeGreen: !this.state.themeGreen});
-  }
-
   render() {
     return (
       <div className={"app" + ' ' + this.state.menuToggle} onClick={this.handleDropdownOverlay}>
@@ -71,4 +66,5 @@ class App extends React.Component {
     );
   }
 }
+
 export default App;

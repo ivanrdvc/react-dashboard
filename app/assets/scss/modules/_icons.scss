@@ -86,15 +86,46 @@
 .icon--nav {
   color: $icon-color;
   margin-right: .5rem;
+  transition: all .3s ease;
 
   &:before {
     font-size: 18px;
+  }
+
+  &:active {
+    color: darken($icon-color, 40%);
+  }
+
+  &:hover {
+    color: darken($icon-color, 20%);
   }
 
   @include breakpoint(large) {
     &:before {
       font-size: 21px;
     }
+  }
+}
+
+
+// Menu icon
+.icon--menu {
+  cursor: pointer;
+
+  &:before {
+    font-size: 25px;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.icon--close {
+  cursor: pointer;
+
+  &:hover {
+    opacity: .8;
   }
 }
 
@@ -127,6 +158,20 @@
 
     &:before {
       font-size: 19px;
+    }
+  }
+}
+
+// Infobox icon
+.icon--infobox {
+  &:before {
+    font-size: 22px;
+    color: #fff;
+  }
+
+  @include breakpoint(large) {
+    &:before {
+      font-size: 24px;
     }
   }
 }

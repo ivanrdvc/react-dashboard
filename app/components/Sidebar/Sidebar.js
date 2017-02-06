@@ -13,13 +13,13 @@ class Sidebar extends React.Component {
             </Link>
           </li>
           <li>
-            <Link to="/featured" onClick={this.props.handleMenuOverlay} className="sidebar-menu__item" activeClassName="sidebar-menu__item--active" title="Featured">
+            <Link to="/features" onClick={this.props.handleMenuOverlay} className="sidebar-menu__item" activeClassName="sidebar-menu__item--active" title="Features">
               <span className="icon icon--sidebar icon--bell" />
-              <span className="sidebar-menu__text">Featured</span>
+              <span className="sidebar-menu__text">Features</span>
             </Link>
           </li>
           <li>
-            <Link to="/Message" onClick={this.props.handleMenuOverlay} className="sidebar-menu__item" title="Dashboard" activeClassName="sidebar-menu__item--active" title="Message">
+            <Link to="/Message" onClick={this.props.handleMenuOverlay} className="sidebar-menu__item" activeClassName="sidebar-menu__item--active" title="Message">
               <span className="icon icon--sidebar icon--mail"/>
               <span className="sidebar-menu__text">Message</span>
             </Link>

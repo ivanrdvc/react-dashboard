@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import App from './components/App';
 import Content from './components/Content/Content';
-import Featured from './components/Content/Featured';
+import Features from './components/Content/Features';
 import Dashboard from './components/Content/Dashboard';
 import Settings from './components/Content/Settings';
 import Message from './components/Content/Message';
@@ -18,7 +18,7 @@ const router = (
         <Route path="/" component={Content}>
           <IndexRoute component={Dashboard} />
           <Route path="/dashboard" component={Dashboard} />
-          <Route path="/featured" component={Featured} />
+          <Route path="/features" component={Features} />
           <Route path="/message" component={Message} />
           <Route path="/uielements" component={UIElements} />
           <Route path="/support" component={Support} />

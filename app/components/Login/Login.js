@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
 
-
 const login = () => {
   return (
     <div className="signup">
@@ -15,8 +14,7 @@ const login = () => {
         </Link>
         <p className="signup__message">Forgot password?</p>
       </form>
-      <p className="signup__footer">Don't have an account? <a href="#">Sign up</a></p>
-
+      <p className="signup__footer">&copy; 2016  <a href="https://ivanrdvc.com/" target="_blank">Ivan Radovic</a></p>
     </div>
   );
 };

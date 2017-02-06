@@ -1,5 +1,3 @@
-// var ExtractTextPlugin = require("extract-text-webpack-plugin");
-
 var config = {
   entry: './app/main.js',
 
@@ -23,7 +21,7 @@ var config = {
           presets: ['es2015', 'react']
         }
       },
-      { 
+      {
         test: /\.scss$/,
         loader: 'ignore-loader'
       }

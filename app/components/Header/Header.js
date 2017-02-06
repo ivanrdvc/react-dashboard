@@ -55,5 +55,4 @@ class Header extends React.Component {
   }
 }
 
-//<span className="alert alert--notification">1</span>
 export default Header;

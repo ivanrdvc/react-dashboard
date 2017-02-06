@@ -1,0 +1,73 @@
+// Fonts
+$primary-font: 'Roboto';
+$secondary-font: 'Open Sans';
+
+// Colors
+$primary-color: #35c4f9; // Light blue
+$sidebar-bg: #2f3b4c;
+$sidebar-bg-active: #2f3742;
+$sidebar-text: #b0bec5;
+$sidebar-border: #2ebef3;
+$content-bg: #f5f8fd;
+$content-text: #1d2334;
+$content-title: #35c4f9;
+$icon-color: #787c82;
+$alert-primary: #f67b4b;
+
+$infobox-primary: #b198dc;
+$infobox-secondary: #6dc7be;
+
+// Breakpoints
+$bp-small: 30em; // 480px
+$bp-medium: 48em; // 768px
+$bp-large: 65em; // 1040px
+$bp-large-x: 75em; // 1200px
+
+// Misc
+$sidebarWidth: 240px;
+$headerHeightSmall: 50px;
+$headerHeightLarge: 72px;
+
+// Themes: Green
+$primary-color-green: #00a65a;
+
+// Typography
+// Clearings and Box sizing
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font, sans-serif;
+}
+
+// Media query
+@mixin breakpoint($point) {
+  @if $point==small {
+    @media (min-width: $bp-small) {
+      @content ;
+    }
+  }
+  @else if $point==medium {
+    @media (min-width: $bp-medium) {
+      @content ;
+    }
+  }
+  @else if $point==smallToMedium {
+    @media (max-width: $bp-large-x) and (min-width: $bp-medium) {
+      @content ;
+    }
+  }
+  @else if $point==large {
+    @media (min-width: $bp-large) {
+      @content ;
+    }
+  }
+}
+
+// Transition Background
+@mixin transition-bg {
+  transition: background .2s ease;
+}
